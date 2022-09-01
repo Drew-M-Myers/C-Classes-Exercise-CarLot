@@ -45,7 +45,7 @@ namespace CarLotSimulator
 
             foreach (var car in lot.Cars)
             {
-                Console.WriteLine($"{car.Year} {car.Make} {car.Model}");
+                Console.WriteLine($"Year:{car.Year} Make:{car.Make} Model:{car.Model}");
             }
         }
     }
