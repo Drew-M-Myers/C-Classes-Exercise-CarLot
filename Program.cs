@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks.Dataflow;
 
 namespace CarLotSimulator
 {
@@ -42,6 +43,10 @@ namespace CarLotSimulator
             carTwo.MakeHonkNoise(carTwo.HonkNoise);
             carThree.MakeEngineNoise(carThree.EngineNoise);
             carThree.MakeHonkNoise(carThree.HonkNoise);
+
+            Console.WriteLine("");
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars}");
+            Console.WriteLine("");
 
             foreach (var car in lot.Cars)
             {
